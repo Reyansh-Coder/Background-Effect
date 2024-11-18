@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Combined Webpage</title>
+    <style>
+        /* Animation code */
+        @keyframes colorCycle {
+            0% {
+                background-color: gold;
+            }
+
+            25% {
+                background-color: blue;
+            }
+
+            50% {
+                background-color: red;
+            }
+
+            100% {
+                background-color: green;
+            }
+        }
+
+        /* Global styles */
+        body {
+            background-color: goldenrod;
+            background-image: url('Designer - 2024-11-13T171512.391.jpeg');
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-attachment: fixed;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Animated div */
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: colorCycle;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Gradient sections */
+        #grad1 {
+            height: 400px;
+            background-color: red;
+            /* Fallback for unsupported browsers */
+            background-image: linear-gradient(to top right, red, orange, yellow, green, blue, indigo, violet);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #grad2 {
+            height: 400px;
+            background-color: red;
+            /* Fallback for unsupported browsers */
+            background-image: radial-gradient(red, orange, yellow, green, blue, indigo, violet);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1,
+        h2 {
+            color: goldenrod;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Section 1: Background Image with Title -->
+    <h1>Coding with Style</h1>
+
+    <!-- Section 2: Animated Div -->
+    <div class="animated-box">
+        Animations
+    </div>
+
+    <!-- Section 3: Linear Gradient -->
+    <div id="grad1">
+        <h2>Linear Gradient Background</h2>
+    </div>
+
+    <!-- Section 4: Radial Gradient -->
+    <div id="grad2">
+        <h2>Radial Gradient Background</h2>
+    </div>
+
+</body>
+
+</html>
